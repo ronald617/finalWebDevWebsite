@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cantor College - Leaders in Computing and Design</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="header-content">
+            <div class="logo">
+
+                <img src="{{ url_for('static', filename='images/logo.png') }}"
+     alt="Cantor College Logo - Computing, Design, Networking">
+
+
+            </div>
+            <nav class="navigation">
+                <ul>
+
+                    <li><a href="{{ url_for('index') }}">Home</a></li>
+                    <li><a href="{{ url_for('about') }}">About Us</a></li>
+                    <li><a href="{{ url_for('howToFindUs') }}">How to Find Us</a></li>
+                    <li><a href="{{ url_for('computing') }}" class="active">Computing Courses</a></li>
+                    <li><a href="{{ url_for('design') }}">Design Courses</a></li>
+                    <li><a href="{{ url_for('facilities') }}">Facilities</a></li>
+                    <li><a href="{{ url_for('learningResources') }}">Learning Resources</a></li>
+                    <li><a href="{{ url_for('informationStaff') }}">Information For Staff</a></li>
+                    <li><a href="{{ url_for('informationStudents') }}">Information For Students</a></li>
+                    <li><a href="{{ url_for('businesses') }}">Working with Businesses</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+                    <li><a href="{{ url_for('courses') }}">Courses</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<section class="hero" aria-labelledby="hero-heading">
+    <div class="hero-image">
+
+    
+       <img src="{{ url_for('static', filename='images/outside.jpg') }}" alt="Cantor College Campus">
+
+
+    </div>
+    <div class="hero-content">
+        <h1>Welcome to Cantor College</h1>
+        <p class="subtitle">Computing · Design · Networking</p>
+        <div class="hero-buttons">
+
+            <a href="{{ url_for('courses') }}" class="btn btn-primary">Explore Courses</a>
+            <a href="{{ url_for('howToFindUs') }}" class="btn btn-primary">Visit Campus</a>
+
+        </div>
+    </div>
+</section>
+
+<main id="main-content">
+
+<section class="about-section">
+    <div class="container">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <div class="about-image">
+
+                <img src="{{ url_for('static', filename='js/images/cantorOutside.jpg') }}" alt="About Cantor College">
+
+            </div>
+            <div class="about-text">
+                <h3>Excellence in Education since 1989</h3>
+                <p>Cantor College has been at the forefront of computing and design education...</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="quick-links" aria-labelledby="quicklinks-heading">
+    <div class="container">
+        <h2>Access to Quick Links</h2>
+        <div class="links-grid">
+
+            <a href="{{ url_for('computing') }}" class="link-card">
+                <h3>Computing Courses</h3>
+                <p>Explore our range of computing programs</p>
+            </a>
+
+            <a href="{{ url_for('design') }}" class="link-card">
+                <h3>Discover Creative Design Opportunities</h3>
+                <p>Explore our range of Design programs</p>
+            </a>
+
+            <a href="{{ url_for('facilities') }}" class="link-card">
+                <h3>Facilities</h3>
+                <p>Tour Our Modern Campus Facilities</p>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer class="footer" role="contentinfo">
+    <div class="container">
+        <div class="footer-content">
+
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: info@cantorcollege.ac.uk</p>
+                <p>Phone: +44 114 123 4567</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Address</h4>
+                <p>Cantor College</p>
+                <p>Main Street, Sheffield</p>
+                <p>S1 1WB, United Kingdom</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Social Media</h4>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" target="_blank">FB</a>
+                    <a href="https://www.twitter.com" target="_blank">X/TW</a>
+                    <a href="https://www.instagram.com" target="_blank">IG</a>
+                    <a href="https://www.linkedin.com" target="_blank">LI</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Cantor College. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
