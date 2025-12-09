@@ -18,18 +18,19 @@
                 </div>
                 <nav class="navigation" aria-label="Main navigation">
                     <ul>
-                    <li><a href="{{ url_for('index') }}">Home</a></li>
+                    
+                    <li><a href="{{ url_for('index') }}" class="active">Home</a></li>
                     <li><a href="{{ url_for('about') }}">About Us</a></li>
                     <li><a href="{{ url_for('howToFindUs') }}">How to Find Us</a></li>
-                    <li><a href="{{ url_for('computing') }}" class="active">Computing Courses</a></li>
+                    <li><a href="{{ url_for('computing') }}">Computing Courses</a></li>
                     <li><a href="{{ url_for('design') }}">Design Courses</a></li>
                     <li><a href="{{ url_for('facilities') }}">Facilities</a></li>
                     <li><a href="{{ url_for('learningResources') }}">Learning Resources</a></li>
                     <li><a href="{{ url_for('informationStaff') }}">Information For Staff</a></li>
                     <li><a href="{{ url_for('informationStudents') }}">Information For Students</a></li>
                     <li><a href="{{ url_for('businesses') }}">Working with Businesses</a></li>
-                    <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
                     <li><a href="{{ url_for('courses') }}">Courses</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
 
                     </ul>
                 </nav>
