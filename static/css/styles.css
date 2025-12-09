@@ -2268,13 +2268,80 @@ body {
         font-size: 1rem;
     }
 }
+
+.courses-page {
+    background-color: var(--light-bg);
+    padding: 3rem 0;
+    margin-top: 200px;
+}
+
+.courses-table {
+    width: 90%;                    
+    max-width: 1000px;             
+    margin: 0 auto;                
+    border-collapse: collapse;
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.courses-table th,
+.courses-table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #eee;
+    font-size: 0.95rem;           
+    line-height: 1.4;
+}
+
+.courses-table th {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: left;
+    font-size: 1rem;               
+}
+
+.courses-table tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+.courses-table tr:hover {
+    background-color: #f0f7ff;
+    transition: 0.2s ease;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto; 
+    padding-bottom: 1rem;
+}
+
+.course-box {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: var(--shadow);
+}
+
+.course-box h2 {
+    text-align: center;
+    font-family: 'Merriweather', 'Georgia', serif;
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
 /*JS section= */
 
 .header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative; /* REQUIRED for .navigation absolute menu */
+    position: relative;
 }
 
 .menu-toggle {
@@ -2325,10 +2392,6 @@ body {
         transition: max-height 0.3s ease;
     }
 
-     .navigation.active {
-        max-height: 1000px; /* allows long menus */
-    }
-
     .navigation ul {
         flex-direction: column;
         padding: 1rem 0;
@@ -2362,6 +2425,7 @@ body {
     transform: translateY(-5px);
     box-shadow: 0 6px 16px rgba(0,0,0,0.3);
 }
+
 
 
 
